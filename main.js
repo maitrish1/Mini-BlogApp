@@ -47,7 +47,7 @@ function showNotes() {
   if (notesObj.length != 0) {
     notesElm.innerHTML = html;
   } else {
-    notesElm.innerHTML = `Nothing to show! Use "Add a Note" section above to add notes.`;
+    notesElm.innerHTML = `No blogs added yet. Add Blogs to make them show up`;
   }
 }
 
@@ -66,14 +66,3 @@ function deleteNote(index) {
   localStorage.setItem("notes", JSON.stringify(notesObj));
   showNotes();
 }
-
-
-
-
-/*
-Further Features:
-1. Add Title
-2. Mark a note as Important
-3. Separate notes by user
-4. Sync and host to web server 
-*/
